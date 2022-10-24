@@ -88,7 +88,7 @@ p {
   padding-left: 0;
 }
 li {
-  font-size: clamp(30px, 2vw, 2vw);
+  font-size: clamp(25px, 2vw, 2vw);
   color: var(--white);
   list-style-type: none;
   padding: 14px 0;
@@ -180,7 +180,7 @@ img {
   width: max-content;
   padding: clamp(10px, 1vw, 1vw);
   margin-top: 24px;
-  font-size: clamp(25px, 1.5vw, 1.5vw);
+  font-size: clamp(20px, 1.5vw, 1.5vw);
   background-image: linear-gradient(var(--yellow), var(--yellow));
   background-repeat: no-repeat;
   background-position-x: 100%;
