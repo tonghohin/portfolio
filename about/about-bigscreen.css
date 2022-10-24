@@ -95,7 +95,7 @@ p {
   position: relative;
   opacity: 0;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 2.5s;
   animation-fill-mode: forwards;
 }
@@ -142,19 +142,19 @@ p {
   animation-delay: 1.8s;
   animation-fill-mode: forwards;
 }
-#softskills > p {
+.triangle {
   background-image: url("/pics/triangle.svg");
   background-repeat: no-repeat;
   background-position: center left;
-  background-size: 30px 30px;
-  padding-left: 50px;
+  background-size: clamp(20px, 1.5vw, 1.5vw) clamp(20px, 1.5vw, 1.5vw);
+  padding-left: clamp(20px, 1.5vw, 1.5vw);
 }
 #education {
   grid-column: 2 / 4;
   grid-row: 7 / 10;
   opacity: 0;
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }

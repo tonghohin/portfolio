@@ -12,9 +12,11 @@ main {
   grid-template-columns: 1fr;
   row-gap: 10px;
   padding: 20px;
+}
+main > * {
   opacity: 0;
   animation-name: fade;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 h1 {
@@ -32,7 +34,7 @@ h2 {
   row-gap: 5px;
 }
 span {
-  font-size: clamp(20px, 1.5vw, 1.5vw);
+  font-size: clamp(20px, 3vw, 3vw);
   color: var(--white);
 }
 div span:first-of-type {
@@ -52,8 +54,8 @@ div span:nth-of-type(2) {
 #linkedin {
   vertical-align: bottom;
   display: inline-block;
-  height: clamp(20px, 1.5vw, 1.5vw);
-  width: clamp(20px, 1.5vw, 1.5vw);
+  height: clamp(20px, 3vw, 3vw);
+  width: clamp(20px, 3vw, 3vw);
   background-image: url("/pics/linkedin-yellow.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -63,46 +65,29 @@ h3 {
   font-size: clamp(30px, 2vw, 2vw);
   border-bottom: 1px solid var(--grey);
 }
-#technicalskills {
+.flexcontainer {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 10px;
-}
-#technicalskills > h3 {
-  flex-basis: 100%;
+  column-gap: 15px;
 }
 .bold {
   font-weight: bolder;
-  font-size: clamp(25px, 1.7vw, 1.7vw);
+  font-size: clamp(25px, 3.5vw, 3.5vw);
 }
 .italic {
   font-style: italic;
 }
 p {
   color: var(--white);
-  font-size: clamp(20px, 1.5vw, 1.5vw);
+  font-size: clamp(20px, 3vw, 3vw);
   padding: 5px 0;
 }
-#softskills {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 10px;
-}
-#softskills > h3 {
-  flex-basis: 100%;
-}
-#softskills > p {
+.triangle {
   background-image: url("/pics/triangle.svg");
   background-repeat: no-repeat;
   background-position: center left;
-  background-size: clamp(20px, 1.5vw, 1.5vw) clamp(20px, 1.5vw, 1.5vw);
-  padding-left: clamp(20px, 1.5vw, 1.5vw);
-}
-#experience {
-  position: relative;
-}
-#experiencedate {
-  color: var(--yellow);
+  background-size: clamp(20px, 3vw, 3vw) clamp(20px, 3vw, 3vw);
+  padding-left: clamp(20px, 3vw, 3vw);
 }
 #experiencecircle {
   display: none;
@@ -118,9 +103,6 @@ p {
 }
 #educationdatethree {
   color: var(--yellow);
-}
-#education {
-  position: relative;
 }
 #educationcircleone {
   display: none;
@@ -138,7 +120,7 @@ p {
   display: none;
 }
 li {
-  font-size: clamp(20px, 1.5vw, 1.5vw);
+  font-size: clamp(20px, 3vw, 3vw);
   padding: 5px 0;
   color: var(--white);
 }
@@ -148,40 +130,11 @@ img {
   margin-right: 10px;
   vertical-align: text-bottom;
 }
-
-@keyframes fromtop {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
 @keyframes fade {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes shortline {
-  0% {
-    opacity: 1;
-    height: 0;
-  }
-  100% {
-    opacity: 1;
-    height: 58px;
-  }
-}
-@keyframes longline {
-  0% {
-    opacity: 1;
-    height: 0;
-  }
-  100% {
-    opacity: 1;
-    height: calc(100% - 13px);
   }
 }

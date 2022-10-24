@@ -113,7 +113,7 @@ h1 > span:nth-child(9) {
 }
 p {
   color: var(--white);
-  font-size: clamp(25px, 2vw, 2vw);
+  font-size: clamp(20px, 2vw, 2vw);
   margin-bottom: 20px;
   animation-name: slidein;
   animation-duration: 1s;
@@ -124,16 +124,16 @@ p {
 p:first-of-type {
   margin: 0;
   background-image: url("/pics/phone.svg");
-  background-size: clamp(25px, 2vw, 2vw) clamp(25px, 2vw, 2vw);
+  background-size: clamp(20px, 2vw, 2vw) clamp(20px, 2vw, 2vw);
   background-repeat: no-repeat;
-  padding-left: 45px;
+  padding-left: clamp(30px, 3vw, 3vw);
 }
 p:last-of-type {
   margin: 0;
   background-image: url("/pics/email.svg");
   background-repeat: no-repeat;
-  background-size: clamp(25px, 2vw, 2vw) clamp(25px, 2vw, 2vw);
-  padding-left: 45px;
+  background-size: clamp(20px, 2vw, 2vw) clamp(20px, 2vw, 2vw);
+  padding-left: clamp(30px, 3vw, 3vw);
 }
 #mail {
   text-decoration: none;
@@ -144,8 +144,8 @@ p:last-of-type {
   color: var(--yellow);
 }
 #linkedin {
-  height: clamp(25px, 2vw, 2vw);
-  width: clamp(25px, 2vw, 2vw);
+  height: clamp(20px, 2vw, 2vw);
+  width: clamp(20px, 2vw, 2vw);
   background-image: url("/pics/linkedin.svg");
   background-repeat: no-repeat;
   background-size: contain;

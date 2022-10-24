@@ -15,10 +15,10 @@ main {
 }
 p {
   color: var(--white);
-  font-size: clamp(40px, 5vw, 5vw);
+  font-size: clamp(30px, 5vw, 5vw);
 }
 #name {
-  font-size: clamp(40px, 5vw, 5vw);
+  font-size: clamp(30px, 5vw, 5vw);
   color: var(--yellow);
 }
 #countdowncontainer {
@@ -54,7 +54,7 @@ p {
   opacity: 0;
   animation-name: slidein;
   animation-fill-mode: forwards;
-  animation-delay: 4.5s;
+  animation-delay: 3s;
   animation-duration: 1.2s;
 }
 #graduatebutton:hover {
@@ -66,10 +66,10 @@ p {
   color: var(--white);
   font-size: clamp(20px, 2vw, 2vw);
   margin-top: 10px;
-  white-space: nowrap;
+  grid-column: 1 / 5;
 }
 .typewriter {
-  display: inline;
+  min-height: clamp(30px, 5vw, 5vw);
   overflow: hidden;
   white-space: nowrap;
   max-width: max-content;
@@ -92,6 +92,7 @@ p {
   }
   100% {
     width: 100%;
+    white-space: wrap;
   }
 }
 @keyframes blink {
