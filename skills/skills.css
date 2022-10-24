@@ -134,26 +134,26 @@ img {
 
 @keyframes fillbar {
   0% {
-    background-size: 0% 4px, 100% 4px;
+    background-size: 0% 3px, 100% 3px;
   }
   100% {
-    background-size: 90% 4px, 100% 4px;
+    background-size: 90% 3px, 100% 3px;
   }
 }
 @keyframes nodejsfillbar {
   0% {
-    background-size: 0% 4px, 100% 4px;
+    background-size: 0% 3px, 100% 3px;
   }
   100% {
-    background-size: 50% 4px, 100% 4px;
+    background-size: 50% 3px, 100% 3px;
   }
 }
 @keyframes windowslinuxfillbar {
   0% {
-    background-size: 0% 4px, 100% 4px;
+    background-size: 0% 3px, 100% 3px;
   }
   100% {
-    background-size: 30% 4px, 100% 4px;
+    background-size: 30% 3px, 100% 3px;
   }
 }
 @keyframes fade {
