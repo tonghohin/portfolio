@@ -1,0 +1,70 @@
+:root {
+  --navblack: #212121;
+  --borderblack: #3e3e3e;
+  --white: #ffffff;
+  --bgblack: #2b2b2b;
+  --orange: #ff6e40;
+  --yellow: #ffc13b;
+  --grey: #a59e9e;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Iceland", cursive;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--navblack);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#logo {
+  display: block;
+  background-image: url("/pics/favicon-32x32.png");
+  background-size: 30px 30px;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 0.5s;
+}
+#logo:hover {
+  background-size: 35px 35px;
+}
+.navitems {
+  font-size: 1.2rem;
+  color: var(--grey);
+  text-decoration: none;
+  padding-bottom: 10px;
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s, color 0.5s;
+}
+.navitems:hover {
+  background-position-x: 0%;
+  background-size: 100% 1px;
+  color: var(--yellow);
+}
+#currentPage {
+  color: var(--yellow);
+}
+main {
+  position: relative;
+  top: 40px;
+  background-color: var(--bgblack);
+  height: calc(100% - 40px);
+  overflow: auto;
+}

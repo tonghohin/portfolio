@@ -1,0 +1,184 @@
+:root {
+  --navblack: #212121;
+  --borderblack: #3e3e3e;
+  --white: #ffffff;
+  --bgblack: #2b2b2b;
+  --orange: #ff6e40;
+  --yellow: #ffc13b;
+  --grey: #a59e9e;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+  row-gap: 10px;
+  padding: 3vw;
+}
+#contactinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+@media screen and (min-width: 1000px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
+  #contactinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+  }
+}
+h1 {
+  color: var(--yellow);
+  font-size: clamp(45px, 5vw, 5vw);
+  margin-bottom: 1vh;
+}
+h1 > span:nth-child(1) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+h1 > span:nth-child(2) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+h1 > span:nth-child(3) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+h1 > span:nth-child(4) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+h1 > span:nth-child(5) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+h1 > span:nth-child(6) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+h1 > span:nth-child(7) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+h1 > span:nth-child(8) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+h1 > span:nth-child(9) {
+  display: inline-block;
+  animation-name: fade;
+  animation-duration: 0.2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+p {
+  color: var(--white);
+  font-size: clamp(25px, 2vw, 2vw);
+  margin-bottom: 20px;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+p:first-of-type {
+  margin: 0;
+  background-image: url("/pics/phone.svg");
+  background-size: clamp(25px, 2vw, 2vw) clamp(25px, 2vw, 2vw);
+  background-repeat: no-repeat;
+  padding-left: 45px;
+}
+p:last-of-type {
+  margin: 0;
+  background-image: url("/pics/email.svg");
+  background-repeat: no-repeat;
+  background-size: clamp(25px, 2vw, 2vw) clamp(25px, 2vw, 2vw);
+  padding-left: 45px;
+}
+#mail {
+  text-decoration: none;
+  color: var(--grey);
+  transition: 0.5s;
+}
+#mail:hover {
+  color: var(--yellow);
+}
+#linkedin {
+  height: clamp(25px, 2vw, 2vw);
+  width: clamp(25px, 2vw, 2vw);
+  background-image: url("/pics/linkedin.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+#linkedin:hover {
+  background-image: url("/pics/linkedin-yellow.svg");
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slidein {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

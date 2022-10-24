@@ -1,0 +1,115 @@
+:root {
+  --navblack: #212121;
+  --borderblack: #3e3e3e;
+  --white: #ffffff;
+  --bgblack: #2b2b2b;
+  --orange: #ff6e40;
+  --yellow: #ffc13b;
+  --grey: #a59e9e;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+}
+p {
+  color: var(--white);
+  font-size: clamp(40px, 5vw, 5vw);
+}
+#name {
+  font-size: clamp(40px, 5vw, 5vw);
+  color: var(--yellow);
+}
+#countdowncontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  opacity: 0;
+  transition: 1s;
+}
+.countdown {
+  color: var(--yellow);
+  font-size: clamp(25px, 2.5vw, 2.5vw);
+}
+.countdowntext {
+  color: var(--grey);
+  font-size: clamp(16px, 1.5vw, 1.5vw);
+}
+#graduatebutton {
+  color: var(--yellow);
+  cursor: pointer;
+  width: max-content;
+  font-size: clamp(16px, 1.5vw, 1.5vw);
+  border: 1px solid var(--yellow);
+  padding: 10px;
+  margin: 25px 0;
+  background-color: transparent;
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: 0% 100%;
+  transition: background-size 0.5s;
+  transform: translateY(200px);
+  opacity: 0;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+  animation-delay: 4.5s;
+  animation-duration: 1.2s;
+}
+#graduatebutton:hover {
+  color: var(--white);
+  background-position-x: 0%;
+  background-size: 100% 100%;
+}
+#graduate {
+  color: var(--white);
+  font-size: clamp(20px, 2vw, 2vw);
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.typewriter {
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: max-content;
+  width: 0%;
+}
+#firstsentence {
+  animation: showtext 3s steps(30, end) forwards, blink 0.5s step-end 2;
+}
+#secondsentence {
+  animation: showtext 3s steps(30, end) forwards, blink 0.6s step-end 2;
+  animation-delay: 0.8s;
+}
+#thirdsentence {
+  animation: showtext 3s steps(30, end) forwards, blink 0.7s step-end 4.5;
+  animation-delay: 2s;
+}
+@keyframes showtext {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 3px solid transparent;
+  }
+  50% {
+    border-right: 3px solid var(--yellow);
+  }
+}
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
