@@ -18,6 +18,9 @@ body {
   display: grid;
   grid-template-columns: 15vw auto;
 }
+/* Base layout for all pages
+Layout for screen's width >= 992px
+Style: navbar at left, content at right */
 nav {
   background-color: var(--navblack);
   display: flex;
@@ -40,6 +43,7 @@ nav {
 #logo:hover {
   transform: scale(1.2);
 }
+/* Logo goes to top right corner when screen's height < 500px */
 @media screen and (max-height: 500px) {
   #logo {
     right: 5vh;

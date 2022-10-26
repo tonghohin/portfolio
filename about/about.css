@@ -7,6 +7,8 @@
   --yellow: #ffc13b;
   --grey: #a59e9e;
 }
+/* Layout for About page where screen's width < 992px
+Style: all content stacks vertically */
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -89,10 +91,8 @@ p {
   background-size: clamp(20px, 3vw, 3vw) clamp(20px, 3vw, 3vw);
   padding-left: clamp(20px, 3vw, 3vw);
 }
-#experiencecircle {
-  display: none;
-}
-#experienceline {
+/* Remove the circles and lines that are only visible for larger screen */
+.remove {
   display: none;
 }
 #educationdateone {
@@ -103,21 +103,6 @@ p {
 }
 #educationdatethree {
   color: var(--yellow);
-}
-#educationcircleone {
-  display: none;
-}
-#educationcircletwo {
-  display: none;
-}
-#educationcirclethree {
-  display: none;
-}
-#educationlineone {
-  display: none;
-}
-#educationlinetwo {
-  display: none;
 }
 li {
   font-size: clamp(20px, 3vw, 3vw);

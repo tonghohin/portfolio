@@ -7,6 +7,8 @@
   --yellow: #ffc13b;
   --grey: #a59e9e;
 }
+/* Layout for Contact page where screen's width < 992px
+Style: grid style; 2 fractions stack vertically */
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -20,7 +22,9 @@ main {
   justify-content: center;
   row-gap: 15px;
 }
-@media screen and (min-width: 1000px) {
+/* Layout for Contact page where screen's width >= 992px
+Style: grid style; 2 fractions stack horizontally */
+@media screen and (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -162,7 +166,6 @@ p:last-of-type {
   height: 100%;
   width: 100%;
 }
-
 @keyframes fade {
   0% {
     opacity: 0;

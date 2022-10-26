@@ -7,12 +7,16 @@
   --yellow: #ffc13b;
   --grey: #a59e9e;
 }
+/* Layout for Skills page where screen's width < 992px
+Style: grid style; 2 fractions stack vertically */
 main {
   display: grid;
   grid-template-columns: 1fr;
   padding: 5vw;
 }
-@media screen and (min-width: 1000px) {
+/* Layout for Skills page where screen's width >= 992px
+Style: grid style; 2 fractions stack horizontally */
+@media screen and (min-width: 992px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,7 +135,25 @@ img {
   animation-name: windowslinuxfillbar, fade;
   background-image: linear-gradient(#ffa63f, #ffa63f), linear-gradient(var(--grey), var(--grey));
 }
-
+#previouswork {
+  border: 1px solid var(--yellow);
+  width: max-content;
+  padding: clamp(10px, 1vw, 1vw);
+  margin-top: 24px;
+  font-size: clamp(20px, 1.5vw, 1.5vw);
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: 0% 100%;
+  transition: background-size 0.5s;
+  color: var(--yellow);
+  text-decoration: none;
+}
+#previouswork:hover {
+  color: var(--white);
+  background-position-x: 0%;
+  background-size: 100% 100%;
+}
 @keyframes fillbar {
   0% {
     background-size: 0% 3px, 100% 3px;
@@ -173,24 +195,4 @@ img {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-#previouswork {
-  border: 1px solid var(--yellow);
-  width: max-content;
-  padding: clamp(10px, 1vw, 1vw);
-  margin-top: 24px;
-  font-size: clamp(20px, 1.5vw, 1.5vw);
-  background-image: linear-gradient(var(--yellow), var(--yellow));
-  background-repeat: no-repeat;
-  background-position-x: 100%;
-  background-size: 0% 100%;
-  transition: background-size 0.5s;
-  color: var(--yellow);
-  text-decoration: none;
-}
-#previouswork:hover {
-  color: var(--white);
-  background-position-x: 0%;
-  background-size: 100% 100%;
 }

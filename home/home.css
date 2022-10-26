@@ -7,6 +7,7 @@
   --yellow: #ffc13b;
   --grey: #a59e9e;
 }
+/* Layout for home page */
 main {
   display: flex;
   flex-direction: column;
@@ -92,7 +93,6 @@ p {
   }
   100% {
     width: 100%;
-    white-space: wrap;
   }
 }
 @keyframes blink {

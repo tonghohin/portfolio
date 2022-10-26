@@ -7,6 +7,8 @@
   --yellow: #ffc13b;
   --grey: #a59e9e;
 }
+/* Layout for About page where screen's width >= 992px
+Style: grid style */
 main {
   height: 100vh;
   padding: 30px;
