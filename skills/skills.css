@@ -7,16 +7,16 @@
   --yellow: #ffc13b;
   --grey: #a59e9e;
 }
-/* Layout for Skills page where screen's width < 992px
+/* Layout for Skills page where screen's width <= 1000px
 Style: grid style; 2 fractions stack vertically */
 main {
   display: grid;
   grid-template-columns: 1fr;
   padding: 5vw;
 }
-/* Layout for Skills page where screen's width >= 992px
+/* Layout for Skills page where screen's width >= 1001px
 Style: grid style; 2 fractions stack horizontally */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1001px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -10,7 +10,8 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Iceland", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 body {
   height: 100vh;
@@ -19,7 +20,7 @@ body {
   grid-template-columns: 15vw auto;
 }
 /* Base layout for all pages
-Layout for screen's width >= 992px
+Layout for screen's width >= 1001px
 Style: navbar at left, content at right */
 nav {
   background-color: var(--navblack);

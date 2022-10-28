@@ -15,10 +15,12 @@ main {
   padding-left: 5vw;
 }
 p {
+  font-weight: 500;
   color: var(--white);
   font-size: clamp(30px, 5vw, 5vw);
 }
 #name {
+  font-weight: 500;
   font-size: clamp(30px, 5vw, 5vw);
   color: var(--yellow);
 }

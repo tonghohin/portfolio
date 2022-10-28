@@ -8,7 +8,7 @@
   --grey: #a59e9e;
 }
 /* Layout for Work page where 
-screen's width < 700px and screen's height >= 700px
+screen's width < 700px and screen's height > 700px
 Style: grid style; 2 colums each row */
 main {
   display: grid;
@@ -25,7 +25,7 @@ h1 {
   font-size: clamp(45px, 5vw, 5vw);
 }
 /* Layout for Work page where 
-screen's width >= 700px and screen's height < 700px
+screen's width >= 700px and screen's height <= 700px
 Style: grid style; 5 colums each row */
 @media screen and (max-height: 700px) and (min-width: 700px) {
   main {

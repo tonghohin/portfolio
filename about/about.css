@@ -7,7 +7,7 @@
   --yellow: #ffc13b;
   --grey: #a59e9e;
 }
-/* Layout for About page where screen's width < 992px
+/* Layout for About page where screen's width <= 1000px
 Style: all content stacks vertically */
 main {
   display: grid;
@@ -27,7 +27,7 @@ h1 {
 }
 h2 {
   color: var(--grey);
-  font-size: clamp(25px, 2vw, 2vw);
+  font-size: clamp(20px, 1.5vw, 1.5vw);
   margin-bottom: 1vh;
 }
 #contact {
@@ -36,29 +36,29 @@ h2 {
   row-gap: 5px;
 }
 span {
-  font-size: clamp(20px, 3vw, 3vw);
+  font-size: clamp(20px, 1.5vw, 1.5vw);
   color: var(--white);
 }
 div span:first-of-type {
   background-image: url("/pics/phone.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  padding-left: 30px;
+  padding-left: 40px;
   margin-right: 30px;
 }
 div span:nth-of-type(2) {
   background-image: url("/pics/email.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  padding-left: 40px;
   margin-right: 30px;
-  padding-left: 30px;
 }
 div span:nth-of-type(3) {
   background-image: url("/pics/home.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  padding-left: 40px;
   margin-right: 30px;
-  padding-left: 30px;
 }
 #linkedin {
   vertical-align: bottom;
@@ -69,9 +69,30 @@ div span:nth-of-type(3) {
   background-repeat: no-repeat;
   background-size: contain;
 }
+#pdf {
+  position: absolute;
+  background-color: var(--yellow);
+  opacity: 0.8;
+  padding: 10px;
+  box-shadow: 5px 5px 5px var(--bgblack);
+  top: 25px;
+  right: 0;
+  color: var(--bgblack);
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.5s;
+  transform: translateX(200px);
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+#pdf:hover {
+  opacity: 1;
+}
 h3 {
   color: var(--yellow);
-  font-size: clamp(30px, 2vw, 2vw);
+  font-size: clamp(25px, 2vw, 2vw);
+  font-weight: 400;
   border-bottom: 1px solid var(--grey);
 }
 .flexcontainer {
@@ -80,15 +101,11 @@ h3 {
   column-gap: 15px;
 }
 .bold {
-  font-weight: bolder;
-  font-size: clamp(25px, 3.5vw, 3.5vw);
-}
-.italic {
-  font-style: italic;
+  font-weight: 400;
 }
 p {
   color: var(--white);
-  font-size: clamp(20px, 3vw, 3vw);
+  font-size: clamp(20px, 1.5vw, 1.5vw);
   padding: 5px 0;
 }
 .triangle {
@@ -112,7 +129,7 @@ p {
   color: var(--yellow);
 }
 li {
-  font-size: clamp(20px, 3vw, 3vw);
+  font-size: clamp(20px, 1.5vw, 1.5vw);
   padding: 5px 0;
   color: var(--white);
 }
@@ -128,5 +145,13 @@ img {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

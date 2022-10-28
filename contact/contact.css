@@ -7,7 +7,7 @@
   --yellow: #ffc13b;
   --grey: #a59e9e;
 }
-/* Layout for Contact page where screen's width < 992px
+/* Layout for Contact page where screen's width <= 1000px
 Style: grid style; 2 fractions stack vertically */
 main {
   display: grid;
@@ -22,9 +22,9 @@ main {
   justify-content: center;
   row-gap: 15px;
 }
-/* Layout for Contact page where screen's width >= 992px
+/* Layout for Contact page where screen's width >= 1001px
 Style: grid style; 2 fractions stack horizontally */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1001px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
