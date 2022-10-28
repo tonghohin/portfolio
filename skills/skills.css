@@ -138,7 +138,7 @@ img {
 #previouswork {
   border: 1px solid var(--yellow);
   width: max-content;
-  padding: clamp(10px, 1vw, 1vw);
+  padding: 10px;
   margin-top: 24px;
   font-size: clamp(20px, 1.5vw, 1.5vw);
   background-image: linear-gradient(var(--yellow), var(--yellow));
