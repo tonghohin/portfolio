@@ -21,15 +21,15 @@ h1 {
 }
 h2 {
   color: var(--white);
-  font-size: clamp(30px, 3vw, 3vw);
+  font-size: clamp(30px, 2vw, 2vw);
   margin-bottom: 20px;
 }
 p {
   color: var(--white);
-  font-size: clamp(20px, 2vw, 2vw);
+  font-size: clamp(20px, 1.5vw, 1.5vw);
   background-image: url("/pics/target.svg");
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: top left;
   background-size: clamp(20px, 1.5vw, 1.5vw) clamp(20px, 1.5vw, 1.5vw);
   margin: 10px 0;
   padding-left: clamp(25px, 1.5vw, 1.5vw);

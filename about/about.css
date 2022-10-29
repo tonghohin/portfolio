@@ -119,6 +119,9 @@ p {
 .remove {
   display: none;
 }
+#experiencedate {
+  color: var(--yellow);
+}
 #educationdateone {
   color: var(--yellow);
 }
