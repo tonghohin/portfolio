@@ -78,6 +78,6 @@ nav > a:nth-of-type(2) {
   color: var(--yellow);
 }
 main {
-  background-color: var(--bgblack);
+  background: linear-gradient(to right, var(--bgblack), var(--navblack));
   overflow: auto;
 }

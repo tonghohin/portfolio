@@ -68,7 +68,7 @@ nav {
 main {
   position: relative;
   top: 40px;
-  background-color: var(--bgblack);
+  background: linear-gradient(var(--bgblack), var(--navblack));
   height: calc(100% - 40px);
   overflow: auto;
 }
