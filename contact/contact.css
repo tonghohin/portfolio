@@ -13,7 +13,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.5fr 1fr;
-  row-gap: 10px;
+  gap: 10px;
   padding: 3vw;
 }
 #contactinfo {
@@ -115,15 +115,17 @@ h1 > span:nth-child(9) {
   animation-fill-mode: forwards;
   opacity: 0;
 }
-p {
-  color: var(--white);
-  font-size: clamp(20px, 2vw, 2vw);
-  margin-bottom: 20px;
+.slidein {
   animation-name: slidein;
   animation-duration: 1s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
+}
+p {
+  color: var(--white);
+  font-size: clamp(20px, 2vw, 2vw);
+  margin-bottom: 20px;
 }
 p:first-of-type {
   margin: 0;
@@ -153,14 +155,58 @@ p:last-of-type {
   background-image: url("/pics/linkedin.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  animation-name: slidein;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  opacity: 0;
 }
 #linkedin:hover {
   background-image: url("/pics/linkedin-yellow.svg");
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.forminput {
+  border: none;
+  background-color: var(--borderblack);
+  font-size: clamp(20px, 1.5vw, 1.5vw);
+  padding: 0.5vw 0 0.5vw 0.5vw;
+  color: var(--white);
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s, color 0.5s;
+}
+.forminput:focus {
+  outline: none;
+  background-position-x: 0%;
+  background-size: 100% 2px;
+}
+textarea {
+  grid-column: 1/3;
+  border: none;
+  height: 20vh;
+  color: var(--white);
+  resize: none;
+}
+button {
+  grid-column: 2/3;
+  background-color: var(--bgblack);
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+  cursor: pointer;
+  padding: 0.5vw 0;
+  font-size: clamp(20px, 1.5vw, 1.5vw);
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-size: 0% 100%;
+  transition: background-size 0.5s;
+}
+button:hover {
+  color: var(--white);
+  background-position-x: 0%;
+  background-size: 100% 100%;
 }
 #map {
   height: 100%;
