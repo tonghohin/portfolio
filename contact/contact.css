@@ -189,6 +189,24 @@ textarea {
   color: var(--white);
   resize: none;
 }
+#successmessage {
+  grid-column: 1/3;
+  color: var(--white);
+  text-align: center;
+  background-color: green;
+  overflow: hidden;
+  transition: 0.5s;
+  height: 0;
+}
+#failuremessage {
+  grid-column: 1/3;
+  color: var(--white);
+  text-align: center;
+  background-color: red;
+  overflow: hidden;
+  transition: 0.5s;
+  height: 0;
+}
 button {
   grid-column: 2/3;
   background-color: var(--bgblack);

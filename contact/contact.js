@@ -21,3 +21,37 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+const form = document.querySelector("form");
+const successmessage = document.querySelector("#successmessage");
+const failuremessage = document.querySelector("#failuremessage");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const payload = new FormData(form);
+  const data = new URLSearchParams(payload);
+
+  fetch("/contact", {
+    method: "POST",
+    body: data
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      if (data === true) {
+        successmessage.style.height = "100%";
+        successmessage.style.padding = "5px 0";
+        failuremessage.style.height = "0";
+        failuremessage.style.padding = "0";
+      } else {
+        failuremessage.style.height = "100%";
+        failuremessage.style.padding = "5px 0";
+        successmessage.style.height = "0";
+        successmessage.style.padding = "0";
+      }
+      console.log("DATA", data);
+    })
+    .catch((err) => console.log(err));
+
+  form.reset();
+});
