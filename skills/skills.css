@@ -172,7 +172,7 @@ img {
     background-size: 0% 3px, 100% 3px;
   }
   100% {
-    background-size: 50% 3px, 100% 3px;
+    background-size: 80% 3px, 100% 3px;
   }
 }
 @keyframes windowslinuxfillbar {

@@ -67,6 +67,9 @@ h1 > span:nth-child(4) {
   animation-fill-mode: forwards;
   opacity: 0;
 }
+#chatroom {
+  background-image: url("/pics/work-chatroom.png");
+}
 #workapple {
   background-image: url("/pics/work-apple.png");
 }
@@ -85,6 +88,7 @@ h1 > span:nth-child(4) {
 main a {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center top;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
   text-decoration: none;
   font-size: clamp(20px, 1.5vw, 1.5vw);
