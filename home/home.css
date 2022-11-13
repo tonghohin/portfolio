@@ -86,7 +86,7 @@ p {
   animation-delay: 0.8s;
 }
 #thirdsentence {
-  animation: showtext 3s steps(30, end) forwards, blink 0.7s step-end 4.5;
+  animation: showtext 2s steps(30, end) forwards, blink 0.7s step-end 4.5;
   animation-delay: 2s;
 }
 @keyframes showtext {
