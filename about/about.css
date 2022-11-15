@@ -76,7 +76,6 @@ div span:nth-of-type(3) {
   padding: 1vw;
   box-shadow: 5px 5px 5px var(--bgblack);
   top: 25px;
-  right: 0;
   color: var(--bgblack);
   text-decoration: none;
   font-weight: 400;
