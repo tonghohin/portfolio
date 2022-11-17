@@ -128,6 +128,10 @@ img {
   animation-name: nodejsfillbar, fade;
   background-image: linear-gradient(#418b3d, #418b3d), linear-gradient(var(--grey), var(--grey));
 }
+#sql {
+  animation-name: nodejsfillbar, fade;
+  background-image: linear-gradient(#f29111, #f29111), linear-gradient(var(--grey), var(--grey));
+}
 #windows {
   animation-name: windowslinuxfillbar, fade;
   background-image: linear-gradient(#00adef, #00adef), linear-gradient(var(--grey), var(--grey));
