@@ -17,7 +17,6 @@ app.get("/", (req, res) => {
 
 app.post("/contact", (req, res) => {
   const { name, email, message } = req.body;
-  console.log("BODY", req.body);
 
   if (name && email && message) {
     sendEmail(name, message, email, res);
@@ -57,7 +56,6 @@ function sendEmail(formName, formMessage, formEmail, response) {
       return;
     }
     console.log("Sent", info.response);
-
     response.send(true);
   });
 }

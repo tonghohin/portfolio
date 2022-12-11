@@ -49,7 +49,6 @@ form.addEventListener("submit", (e) => {
         successmessage.style.height = "0";
         successmessage.style.padding = "0";
       }
-      console.log("DATA", data);
     })
     .catch((err) => console.log(err));
 
