@@ -125,11 +125,12 @@ div {
 h3 {
   text-align: center;
   color: var(--white);
-  font-size: clamp(20px, 1.5vw, 1.5vw);
+  font-size: clamp(18px, 1.5vw, 1.5vw);
+  margin-bottom: 5px;
 }
 p {
   color: var(--white);
-  font-size: clamp(16px, 1vw, 1vw);
+  font-size: clamp(12px, 1vw, 1vw);
 }
 @keyframes rotate {
   0% {
