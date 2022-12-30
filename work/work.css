@@ -81,8 +81,8 @@ h1 > span:nth-child(4) {
 #workweather {
   background-image: url("/pics/work-weather.png");
 }
-#worksnake {
-  background-image: url("/pics/work-snake.png");
+#workportal {
+  background-image: url("/pics/work-portal.png");
 }
 #workbus {
   background-image: url("/pics/work-bus.png");
