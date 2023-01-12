@@ -157,14 +157,27 @@ p:last-of-type {
   color: var(--yellow);
 }
 #linkedin {
+  display: inline-block;
   height: clamp(20px, 2vw, 2vw);
   width: clamp(20px, 2vw, 2vw);
   background-image: url("/pics/linkedin.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  margin-right: 10px;
 }
 #linkedin:hover {
   background-image: url("/pics/linkedin-yellow.svg");
+}
+#github {
+  display: inline-block;
+  height: clamp(20px, 2vw, 2vw);
+  width: clamp(20px, 2vw, 2vw);
+  background-image: url("/pics/github.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#github:hover {
+  background-image: url("/pics/github-yellow.svg");
 }
 form {
   display: grid;

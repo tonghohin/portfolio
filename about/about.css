@@ -68,6 +68,16 @@ div span:nth-of-type(3) {
   background-image: url("/pics/linkedin-yellow.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  margin-right: 15px;
+}
+#github {
+  vertical-align: bottom;
+  display: inline-block;
+  height: clamp(20px, 3vw, 3vw);
+  width: clamp(20px, 3vw, 3vw);
+  background-image: url("/pics/github-yellow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #pdf {
   position: absolute;

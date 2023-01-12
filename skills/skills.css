@@ -129,14 +129,11 @@ img {
   animation-name: nodejsfillbar, fade;
   background-image: linear-gradient(#f29111, #f29111), linear-gradient(var(--grey), var(--grey));
 }
-#windows {
-  animation-name: windowslinuxfillbar, fade;
-  background-image: linear-gradient(#00adef, #00adef), linear-gradient(var(--grey), var(--grey));
+#others {
+  animation-name: nodejsfillbar, fade;
+  background-image: linear-gradient(#f03c2e, #f03c2e), linear-gradient(var(--grey), var(--grey));
 }
-#linux {
-  animation-name: windowslinuxfillbar, fade;
-  background-image: linear-gradient(#ffa63f, #ffa63f), linear-gradient(var(--grey), var(--grey));
-}
+
 #previouswork {
   border: 1px solid var(--yellow);
   width: max-content;
